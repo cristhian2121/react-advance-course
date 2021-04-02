@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.2.3"
   },
   "standard": {
     "ignore": [
@@ -13,7 +15,9 @@
     ]
   },
   "eslintConfig": {
-    "extends": ["./node_modules/standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -27,6 +31,7 @@
     "webpack-dev-server": "^3.4.1"
   },
   "scripts": {
+    "now-build": "npm run build",
     "lint": "standard",
     "build": "webpack -p",
     "dev": "webpack-dev-server",
