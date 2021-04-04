@@ -41,7 +41,8 @@ export const ListOfCategories = () => {
 
     return (
         <>
-            {showFixed ? renderList(true) : renderList()}
+            {renderList()}
+            {showFixed && renderList(true)}
         </>
     )
 }
